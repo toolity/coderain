@@ -1,0 +1,28 @@
+{
+  "name": "coderain",
+  "version": "1.0.0",
+  "description": "random codes generator",
+  "main": "coderain.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toolity/coderain.git"
+  },
+  "keywords": [
+    "random",
+    "unique",
+    "code",
+    "generator",
+    "discount",
+    "coupon",
+    "promo"
+  ],
+  "author": {
+     "name": "Lukasz Wiktor",
+     "email": "lukasz.wiktor@toolity.org"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toolity/coderain/issues"
+  },
+  "homepage": "https://github.com/toolity/coderain#readme"
+}

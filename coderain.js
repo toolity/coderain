@@ -61,7 +61,14 @@
             cache = {};
         }
     }
-    
-    this.CodeRain = CodeRain;
+
+    if (typeof exports !== 'undefined') {
+        if (typeof module !== 'undefined' && module.exports) {
+            exports = module.exports = CodeRain;
+        }
+        exports = CodeRain;
+    } else {
+        this.CodeRain = CodeRain;
+    }
     
 }).call(this);

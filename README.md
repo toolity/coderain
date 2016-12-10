@@ -1,8 +1,21 @@
 # coderain
 a javascript library to genarate unique random codes
 
+## Instalation
 
-### Usage
+### Browser
+
+Download [coderain.js](https://raw.githubusercontent.com/toolity/coderain/master/coderain.js) and include it in your HTML file:
+```
+<script src="coderain.js"></script>
+```
+
+### Node
+```
+$ npm install coderain
+```
+
+## Usage
 
 First you need to create a new instance of `CodeRain` specifying a code pattern.
 In the example we are going to generate codes consisting of 3 random uppercase
