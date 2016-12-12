@@ -39,13 +39,14 @@ while (codes.length < 1000) {
 
 ### Patterns
 
-| placeholder | possible characters                    | description                |
-|-------------|----------------------------------------|----------------------------|
-| `A`         | `ABCDEFGHIJKLMNOPQRSTUVWXYZ`           | uppercase letters          |
-| `a`         | `abcdefghijklmnopqrstuvwxyz`           | lowercase letters          |
-| `9`         | `0123456789`                           | digits                     |
-| `X`         | `ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789` | uppercase letters + digits |
-| `x`         | `abcdefghijklmnopqrstuvwxyz0123456789` | lowercase letters + digits |
+| placeholder | possible characters                                              | description                              |
+|-------------|------------------------------------------------------------------|------------------------------------------|
+| `A`         | `ABCDEFGHIJKLMNOPQRSTUVWXYZ`                                     | uppercase letters                        |
+| `a`         | `abcdefghijklmnopqrstuvwxyz`                                     | lowercase letters                        |
+| `9`         | `0123456789`                                                     | digits                                   |
+| `X`         | `ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`                           | uppercase letters + digits               |
+| `x`         | `abcdefghijklmnopqrstuvwxyz0123456789`                           | lowercase letters + digits               |
+| `#`         | `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789` | uppercase and lowercase letters + digits |
 
 If you would like to use reserved characters in you pattern you can quote it with
 single quotes, for example:

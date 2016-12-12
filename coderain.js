@@ -4,7 +4,8 @@
         "a": "abcdefghijklmnopqrstuvwxyz",
         "9": "0123456789",
         "X": "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
-        "x": "abcdefghijklmnopqrstuvwxyz0123456789"
+        "x": "abcdefghijklmnopqrstuvwxyz0123456789",
+        "#": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
     }
 
     function randomInt(max) {
