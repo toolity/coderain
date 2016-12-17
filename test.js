@@ -43,4 +43,24 @@ describe("CodeRain", function() {
         const code = cr.next();
         expect(code).to.match(/^MAX-[A-Z0-9]{3}$/);
     });
+    
+    it("should count combinations of an alphabetic pattern", function() {
+        const cr = new CodeRain("AAAAA");
+        expect(cr.combinations()).to.eql(26*26*26*26*26);
+    });
+    
+    it("should count combinations of a numeric pattern", function() {
+        const cr = new CodeRain("99999");
+        expect(cr.combinations()).to.eql(10*10*10*10*10);
+    });
+    
+    it("should count combinations of a mixed pattern", function() {
+        const cr = new CodeRain("AAA-999");
+        expect(cr.combinations()).to.eql(26*26*26*10*10*10);
+    });
+    
+    it("should count combinations of a pattern including quotes", function() {
+        const cr = new CodeRain("'MAX'-XXX");
+        expect(cr.combinations()).to.eql(36*36*36);
+    });
 });

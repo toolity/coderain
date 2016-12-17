@@ -40,9 +40,28 @@
         return code;
     }
     
+    function countCombinations(pattern) {
+        var combinations = 1;
+        var quote = "'";
+        var quoteOpen = false;
+        pattern.split("").forEach(function(c) {
+            if (!quoteOpen) {
+                if (placeholders[c]) {
+                    combinations *= placeholders[c].length;
+                } else if (c === quote) {
+                    quoteOpen = true;
+                }
+            } else if (c === quote) {
+                quoteOpen = false;
+            }
+        });
+        return combinations;
+    }
+    
     function CodeRain(pattern) {
         var cache = {};
         var maxAttempts = 0xBAD;
+        var combinations = countCombinations(pattern);
         this.next = function() {
             var attempt = 0;
             
@@ -60,6 +79,9 @@
         }
         this.reset = function() {
             cache = {};
+        }
+        this.combinations = function() {
+            return combinations;
         }
     }
 

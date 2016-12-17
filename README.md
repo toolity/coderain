@@ -53,7 +53,18 @@ single quotes, for example:
 
 `var xmasCodes = new CodeRain("'XMAS'-XXXXX")`
 
+### Combinations
 
-### License
+For every code pattern there is a maximum number of possible combinations. 
+To get this number for your pattern just invoke `combinations()` on the CodeRain instance.
+
+For example there are 10000 possible 4-digits codes (0000-9999):
+
+```
+var 4digitCodes = new CodeRain("9999");
+4digitCodes.combinations(); // returns 10000
+```
+
+## License
 
 Code released under the [MIT license](LICENSE).
