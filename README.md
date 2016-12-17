@@ -1,6 +1,10 @@
 # coderain
 a javascript library to genarate unique random codes
 
+## Demo
+
+You can see CodeRain in action here: https://toolity.org/random-codes
+
 ## Instalation
 
 ### Browser
