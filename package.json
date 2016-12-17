@@ -17,12 +17,19 @@
     "promo"
   ],
   "author": {
-     "name": "Lukasz Wiktor",
-     "email": "lukasz.wiktor@toolity.org"
+    "name": "Lukasz Wiktor",
+    "email": "lukasz.wiktor@toolity.org"
   },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/toolity/coderain/issues"
   },
-  "homepage": "https://github.com/toolity/coderain#readme"
+  "homepage": "https://github.com/toolity/coderain#readme",
+  "devDependencies": {
+    "expect.js": "0.3.1",
+    "mocha": "2.4.5"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  }
 }
